@@ -16,11 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app_food.api.views import search
+from app_food.api.views import search, food_detail, food_list
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('search/', search),
+    path('api/search/', search),
+    path('api/food-list/', food_list),
+    path('api/food/<int:pk>/', food_detail),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

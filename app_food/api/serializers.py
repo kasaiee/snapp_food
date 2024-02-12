@@ -11,13 +11,6 @@ class SearchSerializer(serializers.Serializer):
         return obj.__class__.__name__.lower()
 
 
-class FoodSearchSerializer(serializers.HyperlinkedModelSerializer):
-    
-    class Meta:
-        model = Food
-        fields = ['title']
-
-
 class FoodSerializer(serializers.HyperlinkedModelSerializer):
     restaurant_title = serializers.SerializerMethodField()
 
