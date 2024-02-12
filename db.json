@@ -1,0 +1,301 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$ZrmHbKmFCwTnTGZOwidQnA$RprgP9Duw8dwi+9qnwaCYRCB0HUdZU1NKwRJgPPtu2A=",
+      "last_login": "2024-02-12T15:46:31.594Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-02-10T15:58:16.311Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$ROIIOAo6CPkXSQHKPmqEOv$W65s2RzwELvib5l6CnQGbMG8hiZXhLCX0cXrPGPp4FY=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "hani_admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-02-10T16:25:09.701Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$etWMXAmY7VgjyCBV7e2rjA$lKGeH/AXmJKv/1/yOwxpUd25NCVttXyLQzRx6JIWMyA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "moslem_admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-02-10T16:33:21.019Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app_food.restaurant",
+    "pk": 1,
+    "fields": {
+      "owner": 2,
+      "title": "هانی",
+      "address": "میدان تجریش",
+      "lat": 20.0,
+      "lng": 23.0
+    }
+  },
+  {
+    "model": "app_food.restaurant",
+    "pk": 2,
+    "fields": {
+      "owner": 3,
+      "title": "مسلم",
+      "address": "بازار تهران",
+      "lat": 23.0,
+      "lng": 22.0
+    }
+  },
+
+
+
+
+
+
+
+  {
+  "model": "app_food.food",
+  "pk": 3,
+  "fields": {
+    "restaurant": 1,
+    "title": "کباب کوبیده",
+    "description": "۲۵۰ گرم گوشت گاوی + پیاز رنده شده + ادویه‌های خاص",
+    "image": "food/kabab-koubideh.jpg",
+    "price": 120,
+    "discount": 15
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 4,
+  "fields": {
+    "restaurant": 2,
+    "title": "جوجه کباب",
+    "description": "۲۰۰ گرم گوشت مرغ + زعفران + نمک و فلفل",
+    "image": "food/jooje-kabab.jpg",
+    "price": 85,
+    "discount": 8
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 5,
+  "fields": {
+    "restaurant": 1,
+    "title": "خوراک لوبیا پلو",
+    "description": "۲۰۰ گرم گوشت گوسفندی + لوبیا سبز + برنج ایرانی",
+    "image": "food/loobia-polo.jpg",
+    "price": 110,
+    "discount": 12
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 6,
+  "fields": {
+    "restaurant": 2,
+    "title": "آب‌گوشت",
+    "description": "۲۰۰ گرم گوشت گاوی + نخودچی + سیب زمینی",
+    "image": "food/abgoosht.jpg",
+    "price": 95,
+    "discount": 10
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 7,
+  "fields": {
+    "restaurant": 1,
+    "title": "کوکو سبزی",
+    "description": "سبزی‌های مختلف + تخم‌مرغ + پیاز و سیر",
+    "image": "food/kookoo-sabzi.jpg",
+    "price": 80,
+    "discount": 7
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 8,
+  "fields": {
+    "restaurant": 2,
+    "title": "قاشق‌بازی",
+    "description": "مخلفات مختلف + گوشت گوسفندی + دارچین",
+    "image": "food/ghashogh-bazi.jpg",
+    "price": 105,
+    "discount": 9
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 9,
+  "fields": {
+    "restaurant": 1,
+    "title": "سالاد شیرازی",
+    "description": "خیار + گوجه‌فرنگی + پیاز + نعناع",
+    "image": "food/salad-shirazi.jpg",
+    "price": 75,
+    "discount": 6
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 10,
+  "fields": {
+    "restaurant": 2,
+    "title": "کتلت",
+    "description": "گوشت چرخ‌کرده + سیب‌زمینی + نمک و فلفل",
+    "image": "food/kotlet.jpg",
+    "price": 100,
+    "discount": 11
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 11,
+  "fields": {
+    "restaurant": 1,
+    "title": "سوپ جو",
+    "description": "جو + سبزیجات متنوع + گوشت مرغ",
+    "image": "food/soup-joo.jpg",
+    "price": 88,
+    "discount": 8
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 12,
+  "fields": {
+    "restaurant": 2,
+    "title": "خوراک بادمجان",
+    "description": "بادمجان + گوشت گوسفندی + نمک و زردچوبه",
+    "image": "food/bademjan.jpg",
+    "price": 92,
+    "discount": 10
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 13,
+  "fields": {
+    "restaurant": 1,
+    "title": "کشک بادمجان",
+    "description": "بادمجان + کشک + نعناع",
+    "image": "food/kashk-bademjan.jpg",
+    "price": 78,
+    "discount": 7
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 14,
+  "fields": {
+    "restaurant": 2,
+    "title": "خوراک حلیم",
+    "description": "گندم + گوشت گاوی + دارچین",
+    "image": "food/haleem.jpg",
+    "price": 115,
+    "discount": 12
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 15,
+  "fields": {
+    "restaurant": 1,
+    "title": "کنسرو تن ماهی",
+    "description": "تن ماهی کنسرو شده + پیاز + لیمو",
+    "image": "food/tuna-canned.jpg",
+    "price": 82,
+    "discount": 9
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 16,
+  "fields": {
+    "restaurant": 2,
+    "title": "قورمه سبزی با ماهی",
+    "description": "ماهی قزل‌آلا + سبزیجات متنوع + نمک و زردچوبه",
+    "image": "food/ghorme-sabzi-fish.jpg",
+    "price": 98,
+    "discount": 10
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 17,
+  "fields": {
+    "restaurant": 1,
+    "title": "سوپ لوبیا چیتی",
+    "description": "لوبیا چیتی + گوشت گوسفندی + سبزیجات",
+    "image": "food/loobia-chiti-soup.jpg",
+    "price": 90,
+    "discount": 8
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 18,
+  "fields": {
+    "restaurant": 2,
+    "title": "خوراک میرزاقاسمی",
+    "description": "باقالی + کدو + پیاز داغ",
+    "image": "food/mirza-ghasemi.jpg",
+    "price": 105,
+    "discount": 11
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 19,
+  "fields": {
+    "restaurant": 1,
+    "title": "کباب برگ",
+    "description": "برگ گوجه + گوشت چرخ‌کرده + پیاز و ادویه‌ها",
+    "image": "food/kabab-barg.jpg",
+    "price": 112,
+    "discount": 10
+  }
+},
+{
+  "model": "app_food.food",
+  "pk": 20,
+  "fields": {
+    "restaurant": 2,
+    "title": "شیرینی پرنده",
+    "description": "مرغ + پسته + شکر و زعفران",
+    "image": "food/shirini-parandeh.jpg",
+    "price": 78,
+    "discount": 7
+  }
+}
+]
